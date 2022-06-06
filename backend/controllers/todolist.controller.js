@@ -25,7 +25,7 @@ export const createList = async (req, res) => {
         const lists = await ListsService.createList(listToCreate);
         return res.status(200).json({ status: 200, data: lists, message: "Succesfully Lists Retrieved" });
     } catch (e) {
-        return res.status(400).json({ status: 400, message: e.message });
+        return res.status(400).json({ status: 400, message: e.message }); 
     }
 }
 
@@ -47,3 +47,5 @@ export const deleteList = async (req, res) => {
         return res.status(400).json({ status: 400, message: e.message });
     }
 }
+
+// TEST 

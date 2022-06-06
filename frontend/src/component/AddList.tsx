@@ -23,17 +23,17 @@ const AddList = ({updateList} : AddListProps) => {
         }
         const { data } = await axios.post(`http://localhost:5000/lists`, newList);
         setLists(data); 
-        setAddingLists(false); 
+        setAddinglists(false); 
       }
 
     return(
         <div className="App">
-        <Button variant="secondary" onClick={() => setAddingLists(true)}>Ajouter une Liste</Button>
+        <Button variant="secondary" onClick={() => setAddinglists(true)}>Ajouter une Liste</Button>
 
         { addinglists && 
           <div>
             Name : <input type="text" onChange={(e) => setList_name(e.target.value)}/>
-            <Button variant="secondary" onClick={() => addinglists()}>Ajouter</Button>
+            <Button variant="secondary" onClick={() => addList}>Ajouter</Button>
           </div>
         
         } 

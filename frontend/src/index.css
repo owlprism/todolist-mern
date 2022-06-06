@@ -1,18 +1,15 @@
 * {
   margin: 0; 
   padding: 0; 
-  box-sizing: border-box;
-  font-family: 'Fira Sans', sans-serif;
-
+  background-color: white; 
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto;
 }
 
-body {
-  background-color: #202B3E;
-}
 
 .App {
   padding: 32px; 
-  background-color: #202B3E;
 
 }
 
@@ -20,5 +17,31 @@ body {
   font-size: 40px; 
   font-weight: 700;
   margin-bottom: 32px; 
-  color: white; 
+  color: #202B3E;
+  font-family: 'Fira Sans', sans-serif;
+  text-align: center;
+
 }
+
+.box {  
+  background-color: #202B3E;
+  max-width : 800px; 
+  margin : 0 auto;
+  color: #f1f5f7;
+  padding : 15px 40px 50px;
+  border-radius : 10px;
+  box-shadow: 0 0 1em #202B3E; 
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: bold;
+}
+
+.mb-3 {
+  border-radius : 4px; 
+}
+
+.tache {
+  margin-top: 50px; 
+}
+
+/* color :  #202B3E; */
+/* shadow: #03234a;  */
